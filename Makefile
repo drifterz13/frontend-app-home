@@ -31,10 +31,4 @@ detect_changed_source_translations:
 
 # Pulls translations using atlas.
 pull_translations:
-	mkdir src/i18n/messages
-	cd src/i18n/messages \
-	   && atlas pull $(ATLAS_OPTIONS) \
-	            translations/frontend-platform/src/i18n/messages:frontend-platform \
-	            translations/paragon/src/i18n/messages:paragon \
 
-	$(intl_imports) frontend-platform paragon 
